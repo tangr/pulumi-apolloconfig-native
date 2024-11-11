@@ -11,21 +11,21 @@ from .random_component import *
 
 # Make subpackages available:
 if typing.TYPE_CHECKING:
-    import pulumi_xyz.config as __config
+    import pulumi_apolloconfig.config as __config
     config = __config
 else:
-    config = _utilities.lazy_import('pulumi_xyz.config')
+    config = _utilities.lazy_import('pulumi_apolloconfig.config')
 
 _utilities.register(
     resource_modules="""
 [
  {
-  "pkg": "xyz",
+  "pkg": "apolloconfig",
   "mod": "index",
-  "fqn": "pulumi_xyz",
+  "fqn": "pulumi_apolloconfig",
   "classes": {
-   "xyz:index:Random": "Random",
-   "xyz:index:RandomComponent": "RandomComponent"
+   "apolloconfig:index:Random": "Random",
+   "apolloconfig:index:RandomComponent": "RandomComponent"
   }
  }
 ]
@@ -33,9 +33,9 @@ _utilities.register(
     resource_packages="""
 [
  {
-  "pkg": "xyz",
-  "token": "pulumi:providers:xyz",
-  "fqn": "pulumi_xyz",
+  "pkg": "apolloconfig",
+  "token": "pulumi:providers:apolloconfig",
+  "fqn": "pulumi_apolloconfig",
   "class": "Provider"
  }
 ]

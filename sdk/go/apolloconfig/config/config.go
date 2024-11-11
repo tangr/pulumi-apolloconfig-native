@@ -4,13 +4,13 @@
 package config
 
 import (
-	"example.com/pulumi-xyz/sdk/go/xyz/internal"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi/config"
+	"internal"
 )
 
 var _ = internal.GetEnvOrDefault
 
 func GetItsasecret(ctx *pulumi.Context) bool {
-	return config.GetBool(ctx, "xyz:itsasecret")
+	return config.GetBool(ctx, "apolloconfig:itsasecret")
 }
