@@ -1,4 +1,4 @@
-module github.com/pulumi/pulumi-xyz/sdk
+module github.com/tangr/pulumi-apolloconfig-native/sdk
 
 go 1.21
 
