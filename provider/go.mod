@@ -1,4 +1,4 @@
-module github.com/pulumi/pulumi-xyz/provider
+module github.com/tangr/pulumi-apolloconfig-native/provider
 
 go 1.22
 

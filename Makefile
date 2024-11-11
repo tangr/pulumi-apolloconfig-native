@@ -1,10 +1,10 @@
-PROJECT_NAME := Pulumi Xyz Resource Provider
+PROJECT_NAME := Pulumi apolloconfig Resource Provider
 
-PACK             := xyz
+PACK             := apolloconfig
 PACKDIR          := sdk
-PROJECT          := github.com/pulumi/pulumi-xyz
-NODE_MODULE_NAME := @abc/xyz
-NUGET_PKG_NAME   := Abc.Xyz
+PROJECT          := github.com/tangr/pulumi-apolloconfig-native
+NODE_MODULE_NAME := @tangr/apolloconfig
+NUGET_PKG_NAME   := tangr.apolloconfig
 
 PROVIDER        := pulumi-resource-${PACK}
 VERSION         ?= $(shell pulumictl get version)
